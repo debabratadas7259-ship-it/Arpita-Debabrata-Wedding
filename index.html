@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Arpita ❤️ Debabrata | Wedding Invitation</title>
+<meta name="description" content="Join us as we celebrate the Bengali wedding of Arpita &amp; Debabrata on 13 December 2026.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Arpita ❤️ Debabrata | Wedding Invitation">
+<meta property="og:description" content="Join us as we celebrate the Bengali wedding of Arpita &amp; Debabrata on 13 December 2026.">
+<meta property="og:image" content="https://debabratadas7259-ship-it.github.io/Arpita-Debabrata-Wedding/images/couple.JPG">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://debabratadas7259-ship-it.github.io/Arpita-Debabrata-Wedding/">
+<link rel="canonical" href="https://debabratadas7259-ship-it.github.io/Arpita-Debabrata-Wedding/">
+<meta name="theme-color" content="#5F0718">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ FALLING PETALS (ambient, whole site) ============ -->
+<div class="petal-field" id="petalField" aria-hidden="true"></div>
+
+<!-- ============ OPENING SCREEN ============ -->
+<section id="opening" class="opening">
+  <img class="opening-background-image" src="images/couple.JPG" alt="" aria-hidden="true" onerror="this.style.display='none'; document.getElementById('opening').classList.add('no-photo');">
+  <div class="opening-motif-layer" aria-hidden="true">
+    <svg class="motif motif-top-left" viewBox="0 0 200 200"><use href="#alpana-corner"></use></svg>
+    <svg class="motif motif-top-right" viewBox="0 0 200 200"><use href="#alpana-corner"></use></svg>
+    <svg class="motif motif-bottom-left" viewBox="0 0 200 200"><use href="#alpana-corner"></use></svg>
+    <svg class="motif motif-bottom-right" viewBox="0 0 200 200"><use href="#alpana-corner"></use></svg>
+  </div>
+  <div class="opening-overlay"></div>
+
+  <div class="opening-content">
+    <svg class="lotus-emblem" viewBox="0 0 120 120" aria-hidden="true"><use href="#lotus-icon"></use></svg>
+
+    <p class="eyebrow reveal r1">॥ শুভ বিবাহ ॥</p>
+    <h1 class="opening-title reveal r2">Arpita <span class="amp">&amp;</span> Debabrata</h1>
+    <p class="opening-date reveal r3">13 <span class="dot">•</span> 12 <span class="dot">•</span> 2026</p>
+    <p class="opening-place reveal r4">West Bengal, India</p>
+
+    <div class="opening-names reveal r5">
+      <div class="opening-name-block">
+        <p class="opening-name">Debabrata Das</p>
+        <p class="opening-parent">Son of Paresh Das &amp; Madhabi Das</p>
+      </div>
+      <span class="opening-divider">&amp;</span>
+      <div class="opening-name-block">
+        <p class="opening-name">Arpita</p>
+        <p class="opening-parent">Daughter of Dillip Kumar Chatterjee &amp; Arati Chatterjee</p>
+      </div>
+    </div>
+
+    <p class="opening-blessing reveal r6">"যত মত তত পথ" — May every path of this new life be blessed with love, laughter and the grace of the divine.</p>
+
+    <div class="opening-buttons reveal r7">
+      <button id="enterBtn" class="btn btn-primary">Enter Invitation</button>
+      <button id="musicToggle" class="btn btn-ghost" aria-pressed="false">
+        <span class="music-icon">♫</span><span id="musicLabel">Play Music</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="scroll-hint reveal r7" aria-hidden="true">
+    <span></span>
+  </div>
+</section>
+
+<audio id="weddingAudio" src="music/wedding.mp3" loop preload="none"></audio>
+
+<!-- ============ SVG SPRITE / SHARED MOTIFS ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="alpana-corner">
+      <path d="M100,10 C130,10 160,40 160,70 C160,100 140,120 100,120" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="100" cy="10" r="6" fill="currentColor"/>
+      <path d="M20,100 C20,60 50,30 100,20" fill="none" stroke="currentColor" stroke-width="2"/>
+      <path d="M10,180 Q60,180 60,130 Q60,90 100,90 Q130,90 130,60" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.7"/>
+      <circle cx="10" cy="180" r="4" fill="currentColor"/>
+      <circle cx="130" cy="60" r="4" fill="currentColor" opacity="0.7"/>
+    </g>
+    <g id="lotus-icon">
+      <path d="M60 95 C40 85 30 65 35 45 C45 55 55 65 60 80 C65 65 75 55 85 45 C90 65 80 85 60 95 Z" fill="currentColor" opacity="0.9"/>
+      <path d="M60 90 C48 78 44 62 50 46 C56 58 60 70 60 82 C60 70 64 58 70 46 C76 62 72 78 60 90 Z" fill="currentColor" opacity="0.5"/>
+      <path d="M25 70 C20 55 28 40 42 35 C40 48 40 60 45 72 Z" fill="currentColor" opacity="0.7"/>
+      <path d="M95 70 C100 55 92 40 78 35 C80 48 80 60 75 72 Z" fill="currentColor" opacity="0.7"/>
+      <ellipse cx="60" cy="98" rx="26" ry="6" fill="currentColor" opacity="0.35"/>
+    </g>
+    <g id="shankha-icon">
+      <path d="M30 80 C20 60 25 35 45 22 C60 12 78 15 88 28 C96 38 95 52 85 60 C90 48 86 36 74 30 C80 42 78 55 68 62 C72 52 68 44 58 40 C62 48 58 56 50 58 C55 68 50 78 40 82 C50 74 48 64 40 58 C42 68 36 78 30 80 Z" fill="currentColor"/>
+    </g>
+    <g id="diya-icon">
+      <path d="M10 45 C10 60 25 68 40 68 C55 68 70 60 70 45 C70 45 55 52 40 52 C25 52 10 45 10 45 Z" fill="currentColor"/>
+      <ellipse cx="40" cy="45" rx="30" ry="8" fill="currentColor" opacity="0.85"/>
+      <path class="flame" d="M40 10 C34 20 30 27 30 33 C30 40 34 44 40 44 C46 44 50 40 50 33 C50 27 46 20 40 10 Z" fill="#F2A33C"/>
+    </g>
+  </defs>
+</svg>
+
+<!-- ============ MAIN SITE ============ -->
+<div id="mainSite" class="main-site">
+
+  <!-- NAV -->
+  <nav class="site-nav" id="siteNav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-brand">A <span class="nav-amp">&amp;</span> D</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#story" class="nav-link">Our Story</a></li>
+        <li><a href="#rituals" class="nav-link">Rituals</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#venue" class="nav-link">Venue</a></li>
+        <li><a href="#rsvp" class="nav-link nav-link-cta">RSVP</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-bg-motif" aria-hidden="true">
+      <svg class="hero-lotus-1" viewBox="0 0 120 120"><use href="#lotus-icon"></use></svg>
+      <svg class="hero-lotus-2" viewBox="0 0 120 120"><use href="#lotus-icon"></use></svg>
+    </div>
+    <div class="hero-inner">
+      <p class="eyebrow">শুভ বিবাহ</p>
+      <h1 class="hero-title">Arpita <span class="heart">❤</span> Debabrata</h1>
+      <p class="hero-copy">Together with the blessings and love of our families, we invite you to celebrate the beginning of our forever.</p>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Date</span>
+          <span class="hero-meta-value">13 December 2026</span>
+        </div>
+        <span class="hero-meta-sep">✦</span>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Venue</span>
+          <span class="hero-meta-value">Denanchar Orphuli Char, West Bengal</span>
+        </div>
+      </div>
+      <a href="#family" class="scroll-cta">Explore Invitation <span class="scroll-arrow">↓</span></a>
+    </div>
+  </section>
+
+  <!-- FAMILY BLESSINGS -->
+  <section id="family" class="section family-section">
+    <p class="section-eyebrow">আমাদের শুভ বিবাহ</p>
+    <h2 class="section-title">With the Blessings of Our Families</h2>
+
+    <div class="family-card">
+      <svg class="family-card-icon" viewBox="0 0 80 80" aria-hidden="true"><use href="#shankha-icon"></use></svg>
+      <div class="family-block">
+        <p class="family-name">Debabrata Das</p>
+        <p class="family-parent">Son of Paresh Das &amp; Madhabi Das</p>
+      </div>
+      <div class="family-heart">❤</div>
+      <div class="family-block">
+        <p class="family-name">Arpita</p>
+        <p class="family-parent">Daughter of Dillip Kumar Chatterjee &amp; Arati Chatterjee</p>
+      </div>
+      <svg class="family-card-icon flip" viewBox="0 0 80 80" aria-hidden="true"><use href="#shankha-icon"></use></svg>
+    </div>
+  </section>
+
+  <!-- OUR STORY -->
+  <section id="story" class="section story-section">
+    <p class="section-eyebrow">ভালোবাসার গল্প</p>
+    <h2 class="section-title">Our Story</h2>
+    <p class="story-copy" id="storyText">This is where Arpita and Debabrata can share their beautiful journey together — how they met, their favourite memories, and the story that brought them to this special day.</p>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="section countdown-section">
+    <p class="section-eyebrow">Counting Down To Forever</p>
+    <h2 class="section-title">Our Wedding Day</h2>
+    <div id="countdown" class="countdown" role="timer" aria-live="polite">
+      <div class="count-box"><span class="count-num" id="cd-days">00</span><span class="count-label">Days</span></div>
+      <div class="count-box"><span class="count-num" id="cd-hours">00</span><span class="count-label">Hours</span></div>
+      <div class="count-box"><span class="count-num" id="cd-mins">00</span><span class="count-label">Minutes</span></div>
+      <div class="count-box"><span class="count-num" id="cd-secs">00</span><span class="count-label">Seconds</span></div>
+    </div>
+    <p id="countdownDone" class="countdown-done" hidden>আজ আমাদের শুভ বিবাহ! ❤️<br><span>Today is our special day!</span></p>
+  </section>
+
+  <!-- RITUALS -->
+  <section id="rituals" class="section rituals-section">
+    <p class="section-eyebrow">রীতিনীতি</p>
+    <h2 class="section-title">Wedding Rituals</h2>
+    <p class="section-sub">Every Bengali wedding is woven from rituals passed down through generations — each one a small blessing in itself.</p>
+
+    <div class="rituals-group">
+      <h3 class="rituals-group-title"><span>Pre-Wedding Rituals</span></h3>
+      <div class="ritual-track">
+        <article class="ritual-card">
+          <h4>Ashirbad</h4>
+          <p>Blessing Ceremony</p>
+          <span class="ritual-time">Date &amp; Time to be announced</span>
+        </article>
+        <article class="ritual-card">
+          <h4>Aiburo Bhaat</h4>
+          <p>Traditional pre-wedding feast</p>
+          <span class="ritual-time">Date &amp; Time to be announced</span>
+        </article>
+        <article class="ritual-card">
+          <h4>Dodhi Mangal</h4>
+          <p>Traditional Bengali pre-wedding ritual</p>
+          <span class="ritual-time">Date &amp; Time to be announced</span>
+        </article>
+        <article class="ritual-card">
+          <h4>Gaye Holud</h4>
+          <p>Turmeric Ceremony</p>
+          <span class="ritual-time">Date &amp; Time to be announced</span>
+        </article>
+      </div>
+    </div>
+
+    <div class="rituals-group">
+      <h3 class="rituals-group-title"><span>Wedding Day Rituals</span></h3>
+      <div class="ritual-track">
+        <article class="ritual-card">
+          <h4>Bor Boron</h4>
+          <p>Welcoming the Groom</p>
+          <span class="ritual-time">Date &amp; Time to be announced</span>
+        </article>
+        <article class="ritual-card">
+          <h4>Potto Bastra</h4>
+          <p>Traditional Wedding Ritual</p>
+          <span class="ritual-time">Date &amp; Time to be announced</span>
+        </article>
+        <article class="ritual-card">
+          <h4>Subho Drishti</h4>
+          <p>Auspicious First Sight</p>
+          <span class="ritual-time">Date &amp; Time to be announced</span>
+        </article>
+        <article class="ritual-card">
+          <h4>Mala Bodol</h4>
+          <p>Exchange of Garlands</p>
+          <span class="ritual-time">Date &amp; Time to be announced</span>
+        </article>
+        <article class="ritual-card">
+          <h4>Sampradan</h4>
+          <p>Kanyadaan / Giving Away of the Bride</p>
+          <span class="ritual-time">Date &amp; Time to be announced</span>
+        </article>
+        <article class="ritual-card">
+          <h4>Yagna &amp; Saat Paak</h4>
+          <p>Sacred Fire &amp; Seven Ritual Circuits</p>
+          <span class="ritual-time">Date &amp; Time to be announced</span>
+        </article>
+        <article class="ritual-card">
+          <h4>Sindoor Daan</h4>
+          <p>Applying Sindoor</p>
+          <span class="ritual-time">Date &amp; Time to be announced</span>
+        </article>
+        <article class="ritual-card">
+          <h4>Ghomta</h4>
+          <p>Traditional Bridal Veil</p>
+          <span class="ritual-time">Date &amp; Time to be announced</span>
+        </article>
+      </div>
+    </div>
+
+    <div class="rituals-group">
+      <h3 class="rituals-group-title"><span>Post-Wedding Rituals</span></h3>
+      <div class="ritual-track">
+        <article class="ritual-card">
+          <h4>Bashi Biye</h4>
+          <p>Post-Wedding Ritual</p>
+          <span class="ritual-time">Date &amp; Time to be announced</span>
+        </article>
+        <article class="ritual-card">
+          <h4>Bidaay</h4>
+          <p>Farewell</p>
+          <span class="ritual-time">Date &amp; Time to be announced</span>
+        </article>
+        <article class="ritual-card">
+          <h4>Vat Kapor</h4>
+          <p>Traditional Bengali Ritual</p>
+          <span class="ritual-time">Date &amp; Time to be announced</span>
+        </article>
+        <article class="ritual-card">
+          <h4>Bou Bhaat</h4>
+          <p>Reception / First Meal as a Married Couple</p>
+          <span class="ritual-time">Date &amp; Time to be announced</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section gallery-section">
+    <p class="section-eyebrow">স্মৃতি</p>
+    <h2 class="section-title">Photo Gallery</h2>
+    <p class="section-sub">A few moments we've saved along the way.</p>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <button class="gallery-item g-large" data-full="images/couple.JPG" data-caption="Couple">
+        <img src="images/couple.JPG" alt="Arpita and Debabrata" loading="lazy" onerror="handleImgError(this)">
+        <span class="gallery-placeholder"><svg viewBox="0 0 120 120"><use href="#lotus-icon"></use></svg><em>Couple</em></span>
+        <span class="gallery-caption">Couple</span>
+      </button>
+      <button class="gallery-item" data-full="images/photo1.jpg" data-caption="Pre-Wedding">
+        <img src="images/photo1.jpg" alt="Pre-wedding moment" loading="lazy" onerror="handleImgError(this)">
+        <span class="gallery-placeholder"><svg viewBox="0 0 120 120"><use href="#lotus-icon"></use></svg><em>Pre-Wedding</em></span>
+        <span class="gallery-caption">Pre-Wedding</span>
+      </button>
+      <button class="gallery-item" data-full="images/photo2.jpg" data-caption="Family">
+        <img src="images/photo2.jpg" alt="Family moment" loading="lazy" onerror="handleImgError(this)">
+        <span class="gallery-placeholder"><svg viewBox="0 0 120 120"><use href="#lotus-icon"></use></svg><em>Family</em></span>
+        <span class="gallery-caption">Family</span>
+      </button>
+      <button class="gallery-item" data-full="images/photo3.jpg" data-caption="Engagement">
+        <img src="images/photo3.jpg" alt="Engagement moment" loading="lazy" onerror="handleImgError(this)">
+        <span class="gallery-placeholder"><svg viewBox="0 0 120 120"><use href="#lotus-icon"></use></svg><em>Engagement</em></span>
+        <span class="gallery-caption">Engagement</span>
+      </button>
+      <button class="gallery-item" data-full="images/photo4.jpg" data-caption="Memories">
+        <img src="images/photo4.jpg" alt="A cherished memory" loading="lazy" onerror="handleImgError(this)">
+        <span class="gallery-placeholder"><svg viewBox="0 0 120 120"><use href="#lotus-icon"></use></svg><em>Memories</em></span>
+        <span class="gallery-caption">Memories</span>
+      </button>
+      <button class="gallery-item" data-full="images/photo5.jpg" data-caption="Wedding Preparations">
+        <img src="images/photo5.jpg" alt="Wedding preparations" loading="lazy" onerror="handleImgError(this)">
+        <span class="gallery-placeholder"><svg viewBox="0 0 120 120"><use href="#lotus-icon"></use></svg><em>Preparations</em></span>
+        <span class="gallery-caption">Preparations</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- VENUE -->
+  <section id="venue" class="section venue-section">
+    <p class="section-eyebrow">অনুষ্ঠান স্থল</p>
+    <h2 class="section-title">The Wedding Venue</h2>
+    <div class="venue-card">
+      <svg class="venue-icon" viewBox="0 0 80 80" aria-hidden="true"><use href="#diya-icon"></use></svg>
+      <p class="venue-pluscode">CW92+82V</p>
+      <p class="venue-line">Denanchar Orphuli Char</p>
+      <p class="venue-line">West Bengal, India</p>
+      <a id="mapsLink" class="btn btn-primary" href="#" target="_blank" rel="noopener">📍 View Wedding Location</a>
+    </div>
+  </section>
+
+  <!-- RSVP -->
+  <section id="rsvp" class="section rsvp-section">
+    <p class="section-eyebrow">উপস্থিতি</p>
+    <h2 class="section-title">Will You Join Us?</h2>
+    <p class="section-sub">We would be honoured to celebrate this beautiful occasion with you.</p>
+
+    <form id="rsvpForm" class="rsvp-form">
+      <label class="field">
+        <span>Name</span>
+        <input type="text" id="rsvpName" name="name" required autocomplete="name">
+      </label>
+      <label class="field">
+        <span>Mobile Number</span>
+        <input type="tel" id="rsvpMobile" name="mobile" required autocomplete="tel">
+      </label>
+      <fieldset class="field">
+        <legend>Will you attend?</legend>
+        <div class="radio-row">
+          <label class="radio-pill"><input type="radio" name="attendance" value="Yes, with pleasure ❤️" checked> Yes, with pleasure ❤️</label>
+          <label class="radio-pill"><input type="radio" name="attendance" value="Sorry, I cannot attend"> Sorry, I cannot attend</label>
+          <label class="radio-pill"><input type="radio" name="attendance" value="Maybe"> Maybe</label>
+        </div>
+      </fieldset>
+      <label class="field">
+        <span>Number of Guests</span>
+        <input type="number" id="rsvpGuests" name="guests" min="1" max="20" value="1">
+      </label>
+      <label class="field">
+        <span>Message</span>
+        <textarea id="rsvpMessage" name="message" rows="3" placeholder="Leave a blessing for the couple..."></textarea>
+      </label>
+      <button type="submit" class="btn btn-primary btn-wide">Send RSVP on WhatsApp</button>
+    </form>
+
+    <button id="saveDateBtn" class="btn btn-ghost btn-wide save-date-btn">🗓 Save the Date ❤️</button>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <svg class="footer-lotus" viewBox="0 0 120 120" aria-hidden="true"><use href="#lotus-icon"></use></svg>
+    <p class="footer-eyebrow">শুভ বিবাহ</p>
+    <h2 class="footer-title">Arpita <span class="heart">❤</span> Debabrata</h2>
+    <p class="footer-date">13 December 2026</p>
+    <p class="footer-venue">CW92+82V, Denanchar Orphuli Char, West Bengal</p>
+    <p class="footer-message">We can't wait to celebrate our special day with you.</p>
+    <p class="footer-signature">With love,<br>Arpita &amp; Debabrata</p>
+  </footer>
+
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+  <p id="lightboxCaption" class="lightbox-caption"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
